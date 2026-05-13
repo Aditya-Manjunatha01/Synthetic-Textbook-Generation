@@ -1,7 +1,7 @@
 CURRENT SUBSECTION: {{subsection_id}} — {{subsection_name}}
 
-━━━ FULL SKELETON ━━━
-{{skeleton}}
+━━━ PREVIOUS AND CURRENT SKELETON ━━━
+{{skeleton_past}}
 
 ━━━ SHORT-TERM MEMORY ━━━
 {{stm}}

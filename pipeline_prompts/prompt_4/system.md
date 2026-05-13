@@ -15,12 +15,11 @@ over-retrieval wastes your context budget and will be capped.
 YOUR INPUTS AT THIS STAGE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-FULL SKELETON
-  Every chapter, section, and subsection in the textbook. Use it to
-  understand what has been written before this subsection, what this
-  subsection's position is in the larger arc, and what is coming after.
-  Subsection IDs (e.g. 3.2.1) are the identifiers you use to request
-  summary files.
+PREVIOUS AND CURRENT SKELETON
+  The chapters, sections, and subsections of the textbook up to and including
+  the current section. Use it to understand what has been written before this 
+  subsection. Subsection IDs (e.g. 3.2.1) are the identifiers you use to 
+  request summary files.
 
 SHORT-TERM MEMORY (STM)
   A handoff note from the immediately preceding subsection. Tells you

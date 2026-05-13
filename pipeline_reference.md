@@ -213,7 +213,7 @@ For each subsection, before any LLM call:
 ### 10.1 Turn 1 — Teacher Retrieval Request (Prompt 4)
 
 **Model:** Teacher  
-**Variables:** `{{subsection_id}}`, `{{subsection_name}}`, `{{skeleton}}` (condensed format), `{{stm}}`, `{{rag_chunks}}`, `{{user_level}}`
+**Variables:** `{{subsection_id}}`, `{{subsection_name}}`, `{{skeleton_past}}` (condensed format), `{{stm}}`, `{{rag_chunks}}`, `{{user_level}}`
 
 The teacher reads the condensed skeleton and current STM, then decides what context it needs. It emits:
 

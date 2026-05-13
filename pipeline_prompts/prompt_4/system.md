@@ -81,22 +81,28 @@ If the subsection summaries you are already requesting cover what you need,
 do not also request the concept section.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-HARD CAP
+SELECTIVITY AND JUSTIFICATION
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-You may request at most 10 summary files. If your dependency analysis
-suggests more than 10, prioritise by directness of dependency — request
-the summaries whose results you will most immediately build on, and
-omit the more distant ones.
+There is no strict numerical limit on the number of summaries or concept
+sections you may request. You may request as many as are necessary. 
+However, you must be ruthlessly selective. 
+
+Do not request files "just in case" or because they are topically adjacent. 
+Every single request consumes context window and must be justified by a 
+direct, concrete dependency (e.g., you need to use a specific formula derived 
+there, or you need the exact notation introduced). 
 
 If you genuinely need no prior summaries beyond the STM, emit an empty
-request list. This is valid — do not pad the list to appear thorough.
+request list. This is valid and expected behavior for many subsections — 
+do not pad the list to appear thorough.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 HARD RULES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-1. Maximum 10 entries. The pipeline will reject lists longer than 10.
+1. Every requested entry must be strictly necessary for writing the current 
+   subsection. Do not over-retrieve.
 
 2. Every entry must have a subsection ID and a reason. Reasons must
    be specific — name the concept or result you need from that summary,

@@ -21,7 +21,7 @@ _GARBAGE_NAMES = {
 MAX_RETRIES               = 3
 LOOKBACK_CHAPTERS         = 2
 MIN_SUBSECTIONS_PER_SEC   = 5
-MAX_SUBSECTIONS_PER_SEC   = 10
+MAX_SUBSECTIONS_PER_SEC   = 100
 
 
 # ── Public entry point ────────────────────────────────────────────────────────

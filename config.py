@@ -21,24 +21,24 @@ OUTPUT_DIR  = os.environ.get("OUTPUT_DIR",  "/home/airexlabadmin/aditya/pipeline
 MAX_TOKENS          = 50000   # Phase 3 content calls
 SKELETON_MAX_TOKENS = 50000  # Skeleton calls — large JSON outputs need more room
 TEMPERATURE         = 0.7
- 
+
 # ── Pipeline constants ────────────────────────────────────────────────────────
-MAX_RETRIEVAL_REQUESTS = 10
+MAX_RETRIEVAL_REQUESTS = 999
 KB_RAG_PLACEHOLDER     = "[No knowledge base chunks available for this run.]"
- 
+
 # ── Resume state files ────────────────────────────────────────────────────────
 SKELETON_PATH = os.path.join(OUTPUT_DIR, "skeleton.json")
 STM_PATH      = os.path.join(OUTPUT_DIR, "stm.txt")
- 
+
 # ── Per-section file path helpers ─────────────────────────────────────────────
 # sec_id (e.g. "1.2") already encodes the chapter — ch_id is accepted for call
 # compatibility but not used in the path.
- 
+
 def get_registry_path(ch_id: int, sec_id: str) -> str:
     """registry/registry_sec_1_2.txt  ←  section 1.2"""
     sec_safe = str(sec_id).replace(".", "_")
     return os.path.join(OUTPUT_DIR, "registry", f"registry_sec_{sec_safe}.txt")
- 
+
 def get_concept_path(ch_id: int, sec_id: str) -> str:
     """concepts/concepts_sec_1_2.txt  ←  section 1.2"""
     sec_safe = str(sec_id).replace(".", "_")

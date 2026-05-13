@@ -11,8 +11,7 @@ from config import (
 from llm_client import call_llm, call_llm_messages
 from prompts import load_prompt
 from disk_utils import parse_block, apply_delta, read_file, write_file
-from skeleton_builder import get_all_subsections, fmt_skeleton_condensed
-
+from skeleton_builder import get_all_subsections, fmt_skeleton_condensed, fmt_skeleton_up_to_section
 logger = logging.getLogger(__name__)
 
 SUMMARIES_DIR = os.path.join(OUTPUT_DIR, "summaries")
@@ -80,8 +79,11 @@ def run_phase3(skeleton: dict):
         # Current section's registry only — not global
         registry = read_file(reg_path)
 
+        # Generate the truncated skeleton for Prompt 4
+        skeleton_past_str = fmt_skeleton_up_to_section(skeleton, sec_id)
+
         fetched_summaries, fetched_concepts = _turn1_retrieval(
-            sub_id, sub_name, skeleton_str, stm, skeleton, subsections, i,
+            sub_id, sub_name, skeleton_past_str, stm, skeleton, subsections, i,
         )
         outline = _turn2a_outline(
             sub_id, sub_name, skeleton_str, stm,
@@ -169,7 +171,7 @@ def _call_auditor_with_retry(
 # ── Turn implementations ──────────────────────────────────────────────────────
 
 def _turn1_retrieval(
-    sub_id, sub_name, skeleton_str, stm,
+    sub_id, sub_name, skeleton_past_str, stm,
     skeleton, subsections, current_index,
 ) -> tuple[str, str]:
     """
@@ -185,7 +187,7 @@ def _turn1_retrieval(
     system, user = load_prompt(4, {
         "subsection_id":              sub_id,
         "subsection_name":            sub_name,
-        "skeleton":                   skeleton_str,
+        "skeleton_past":              skeleton_past_str, # <--- Updated variable name
         "stm":                        stm,
         "rag_chunks":                 KB_RAG_PLACEHOLDER,
         "user_level":                 USER_LEVEL,
@@ -193,7 +195,7 @@ def _turn1_retrieval(
     })
     response = call_llm(TEACHER_MODEL, system, user)
     retrieval = _parse_retrieval_request(response, subsections, current_index,
-                                         skeleton, completed_secs)
+                                        skeleton, completed_secs)
 
     fetched_summaries = _fetch_summaries(retrieval["summaries"])
     fetched_concepts  = _fetch_concepts(retrieval["concept_sections"], skeleton)

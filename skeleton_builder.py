@@ -161,7 +161,31 @@ def build_skeleton(topic_name: str) -> dict:
     logger.info(f"Skeleton complete → {SKELETON_PATH}")
     return skeleton
 
-
+def fmt_skeleton_up_to_section(skeleton: dict, target_sec_id: str) -> str:
+    """
+    Compact flat-text representation of the skeleton up to and including the target section.
+    Omits any chapters or sections that come after it to save context window.
+    """
+    lines = []
+    stop = False
+    for ch in skeleton["chapters"]:
+        lines.append(f"Chapter {ch['id']}: {ch['name']}")
+        for sec in ch["sections"]:
+            lines.append(f"  {sec['id']} {sec['name']}")
+            for sub in sec.get("subsections", []):
+                typ  = sub.get("type") or ""
+                diff = sub.get("difficulty") or ""
+                tag  = f" [{typ}, {diff}]" if (typ or diff) else ""
+                lines.append(f"    {sub['id']} {sub['name']}{tag}")
+            
+            # Stop once we've appended the target section's contents
+            if str(sec["id"]) == str(target_sec_id):
+                stop = True
+                break
+        if stop:
+            break
+    return "\n".join(lines)
+    
 # ── Retry + feedback loop ─────────────────────────────────────────────────────
 
 def _call_with_retry(system: str, user: str, validate_fn, max_retries: int = MAX_RETRIES) -> dict:

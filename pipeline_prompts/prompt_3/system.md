@@ -122,9 +122,17 @@ For exercise subsections:
 STRUCTURAL REQUIREMENTS — READ CAREFULLY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-You decide the number and arrangement of subsections per section. There
-is no cap. Use as many as the material requires. However, the following
+You decide the arrangement of subsections per section. However, the following
 requirements are non-negotiable:
+
+Every section must contain:
+  - A minimum of 3 theory subsections (type: "theory")
+  - At least 1 worked example (type: "example")  
+  - At least 1 exercise (type: "exercise")
+  - Total subsections: between 5 and 8
+
+  Do not generate more than 2 exercises or 
+  more than 2 worked examples per section — remaining slots are theory.
 
 WORKED EXAMPLES
   Every section must contain multiple worked examples. A single worked

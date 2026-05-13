@@ -1,0 +1,26 @@
+[SUMMARY: 3.1.1 — Definition and Thermodynamic Origin of the Chemical Potential]
+
+ESTABLISHED:
+  — Extension of the fundamental thermodynamic relation to open/multicomponent systems by adding a composition term $\sum_{i} \mu_i dn_i$.
+  — Formal definition of chemical potential $\mu_i$ as the partial derivative of internal energy $U$ with respect to moles $n_i$ at constant entropy, volume, and other species amounts.
+  — Derivation of the fundamental equation for Gibbs free energy $G$ via Legendre transform, showing that $\mu_i$ is the partial molar Gibbs free energy at constant $T$ and $P$.
+  — Physical interpretation of $\mu_i$ as the driving force for mass transport (escaping tendency), where matter flows from high $\mu_i$ to low $\mu_i$.
+
+NOT YET DEVELOPED:
+  — Specific functional forms of $\mu_i$ for ideal gases or ideal solutions.
+  — Formal equilibrium conditions for multi-phase systems.
+
+NOTATION INTRODUCED:
+  $n_i$ : amount of substance of species $i$ [mol]
+  $\mu_i$ : chemical potential of species $i$ [J mol$^{-1}$]
+
+PEDAGOGICAL APPROACH:
+  — Full derivation provided for the transition from internal energy $U$ to Gibbs free energy $G$.
+  — Physical intuition provided via the "chemical pressure" analogy and a conceptual diagram of diffusive flux.
+  — No worked examples or exercises included in this subsection.
+
+KEY EQUATIONS:
+  $dU = TdS - PdV + \sum_{i} \mu_i dn_i$
+  $\mu_i = \left( \frac{\partial U}{\partial n_i} \right)_{S, V, n_{j \neq i}}$
+  $dG = -SdT + VdP + \sum_{i} \mu_i dn_i$
+  $\mu_i = \left( \frac{\partial G}{\partial n_i} \right)_{T, P, n_{j \neq i}}$

@@ -1,0 +1,89 @@
+
+
+<<SYMBOL: S>>
+symbol: S
+latex: S
+meaning: entropy
+type: scalar
+units: J/K
+scope: global
+first_defined: 2.1.1
+status: active
+<</SYMBOL>>
+
+<<SYMBOL: \delta Q>>
+symbol: \delta Q
+latex: \delta Q
+meaning: heat exchange
+type: scalar
+units: J
+scope: global
+first_defined: 2.1.1
+status: active
+<</SYMBOL>>
+
+<<SYMBOL: T>>
+symbol: T
+latex: T
+meaning: absolute temperature
+type: scalar
+units: K
+scope: global
+first_defined: 2.1.1
+status: active
+<</SYMBOL>>
+
+<<SYMBOL: dS>>
+symbol: dS
+latex: dS
+meaning: infinitesimal change in entropy
+type: scalar
+units: J/K
+scope: global
+first_defined: 2.1.1
+status: active
+<</SYMBOL>>
+
+<<SYMBOL: S_{eq}>>
+symbol: S_{eq}
+latex: S_{eq}
+meaning: entropy at equilibrium
+type: scalar
+units: J/K
+scope: global
+first_defined: 2.1.3
+status: active
+<</SYMBOL>>
+
+<<SYMBOL: S_{max}>>
+symbol: S_{max}
+latex: S_{max}
+meaning: maximum possible entropy
+type: scalar
+units: J/K
+scope: global
+first_defined: 2.1.3
+status: active
+<</SYMBOL>>
+
+<<SYMBOL: U>>
+symbol: U
+latex: U
+meaning: internal energy
+type: scalar
+units: J
+scope: global
+first_defined: 2.1.3
+status: active
+<</SYMBOL>>
+
+<<SYMBOL: V>>
+symbol: V
+latex: V
+meaning: volume
+type: scalar
+units: m^3
+scope: global
+first_defined: 2.1.3
+status: active
+<</SYMBOL>>

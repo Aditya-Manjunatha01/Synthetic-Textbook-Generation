@@ -1,0 +1,28 @@
+[SUMMARY: 2.1.2 — Worked Example: Entropy Change in an Irreversible Free Expansion of an Ideal Gas]
+
+ESTABLISHED:
+  — The entropy change for the free expansion (Joule expansion) of an ideal gas into a vacuum.
+  — Proof that for an adiabatic free expansion of an ideal gas, $\Delta U = 0$ and $T$ remains constant because $U = U(T)$.
+  — The method of using a hypothetical reversible isothermal path to calculate $\Delta S$ for an irreversible process, leveraging the fact that entropy is a state function.
+  — Final result: $\Delta S = nR \ln(V_f/V_i)$.
+
+NOT YET DEVELOPED:
+  None.
+
+NOTATION INTRODUCED:
+  $n$ : number of moles [mol]
+  $R$ : universal gas constant [J mol$^{-1}$ K$^{-1}$]
+  $V_i$ : initial volume [m$^3$]
+  $V_f$ : final volume [m$^3$]
+  $T$ : absolute temperature [K]
+
+PEDAGOGICAL APPROACH:
+  — Full derivation provided using a thought experiment (Joule expansion).
+  — Physical intuition provided regarding the distinction between heat exchange and entropy production.
+  — Worked example format.
+  — No exercises included in this subsection.
+
+KEY EQUATIONS:
+  $\Delta U = \delta Q - \delta W = 0$
+  $\delta Q_{rev} = \frac{nRT}{V} dV$
+  $\Delta S = nR \ln\left(\frac{V_f}{V_i}\right)$

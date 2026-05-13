@@ -14,13 +14,23 @@ TEACHER_MODEL = "google/gemma-4-31B-it"
 AUDITOR_MODEL = "google/gemma-4-31B-it"
 
 # ── Paths (override via env vars if needed) ───────────────────────────────────
-PROMPTS_DIR = os.environ.get("PROMPTS_DIR", "/home/airexlabadmin/aditya/pipeline/pipeline_prompts")
-OUTPUT_DIR  = os.environ.get("OUTPUT_DIR",  "/home/airexlabadmin/aditya/pipeline/outputs_practical")
+PROMPTS_DIR = os.environ.get("PROMPTS_DIR", "/Users/adityamanjunatha/Desktop/Synthetic-Textbook-Generation/pipeline_prompts")
+OUTPUT_DIR  = os.environ.get("OUTPUT_DIR",  "/Users/adityamanjunatha/Desktop/Synthetic-Textbook-Generation/outputs")
 
 # ── Generation defaults ───────────────────────────────────────────────────────
 MAX_TOKENS          = 50000   # Phase 3 content calls
 SKELETON_MAX_TOKENS = 50000  # Skeleton calls — large JSON outputs need more room
 TEMPERATURE         = 0.7
+
+# ── Generation constraints ────────────────────────────────────────────────────
+MIN_CHAPTERS = 1
+MAX_CHAPTERS = 3
+
+MIN_SECTIONS = 1
+MAX_SECTIONS = 3
+
+MIN_SUBSECTIONS = 1
+MAX_SUBSECTIONS = 3
 
 # ── Pipeline constants ────────────────────────────────────────────────────────
 MAX_RETRIEVAL_REQUESTS = 999

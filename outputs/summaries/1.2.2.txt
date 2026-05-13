@@ -1,0 +1,29 @@
+[SUMMARY: 1.2.2 — Worked Example: Energy Balance in a Non-Quasistatic Compression Process]
+
+ESTABLISHED:
+  — Method for calculating work in non-quasistatic processes using external pressure: $W = \int P_{ext} dV$.
+  — Energy balance for an adiabatic ($Q=0$) non-quasistatic compression of a monatomic ideal gas.
+  — Derivation of final temperature $T_f$ by equating work done by the external agent to the change in internal energy $\Delta U = n C_V (T_f - T_i)$.
+  — Comparison between quasistatic and non-quasistatic processes: non-quasistatic compression results in less work done on the gas and a lower final temperature for the same volume change.
+  — Representation of non-quasistatic processes on $P-V$ diagrams as transitions between equilibrium states rather than continuous curves.
+
+NOT YET DEVELOPED:
+  None.
+
+NOTATION INTRODUCED:
+  $P_{ext}$ : external pressure [Pa]
+  $V_i$ : initial volume [m³]
+  $V_f$ : final volume [m³]
+  $T_i$ : initial temperature [K]
+  $T_f$ : final temperature [K]
+  $C_V$ : molar heat capacity at constant volume [J mol⁻¹ K⁻¹]
+
+PEDAGOGICAL APPROACH:
+  — Worked example using a specific physical system (monatomic ideal gas in a cylinder).
+  — Full derivation of the final temperature.
+  — Physical intuition provided via comparison with reversible (quasistatic) processes and $P-V$ diagram visualization.
+
+KEY EQUATIONS:
+  $W = P_{ext}(V_f - V_i)$
+  $\Delta U = P_{ext}(V_i - V_f)$
+  $T_f = T_i + \frac{P_{ext}(V_i - V_f)}{n C_V}$

@@ -1,0 +1,35 @@
+[SUMMARY: 2.3.2 — Worked Example: Determining the Spontaneity of a Chemical Reaction at Constant Pressure and Temperature]
+
+ESTABLISHED:
+  — Spontaneity criterion at constant $T, P$: $\Delta G < 0$ (spontaneous), $\Delta G = 0$ (equilibrium), $\Delta G > 0$ (non-spontaneous).
+  — The relationship between Gibbs free energy, enthalpy, and entropy: $\Delta G = \Delta H - T\Delta S$.
+  — Calculation of reaction enthalpy ($\Delta H^\circ$) and entropy ($\Delta S^\circ$) using the sum of standard molar values weighted by stoichiometric coefficients $\nu_i$.
+  — The concept of a crossover temperature $T_{eq}$ where a reaction switches spontaneity, derived from setting $\Delta G = 0$.
+  — Assumption: $\Delta H^\circ$ and $\Delta S^\circ$ are treated as constant over the temperature range for simplicity.
+
+NOT YET DEVELOPED:
+  — Temperature dependence of $\Delta H$ and $\Delta S$ (explicitly assumed constant here).
+  — The Gibbs-Helmholtz equation.
+  — The quantitative relationship between $\Delta G^\circ$ and the equilibrium constant $K$.
+
+NOTATION INTRODUCED:
+  — $\Delta G$ : change in Gibbs free energy [kJ or J]
+  — $\Delta H$ : change in enthalpy [kJ or J]
+  — $\Delta S$ : change in entropy [J/K]
+  — $\circ$ : superscript denoting standard state (1 bar) [dimensionless]
+  — $\Delta H_f^\circ$ : standard enthalpy of formation [kJ/mol]
+  — $S^\circ$ : standard molar entropy [J/mol$\cdot$K]
+  — $\nu_i$ : stoichiometric coefficient of species $i$ [dimensionless]
+  — $T_{eq}$ : equilibrium crossover temperature [K]
+
+PEDAGOGICAL APPROACH:
+  — Applied example using a real industrial process (Haber-Bosch).
+  — Step-by-step numerical calculation including unit conversion.
+  — Comparison of two temperature regimes to illustrate the competition between enthalpy and entropy.
+  — Included a solved exercise for reader reinforcement.
+
+KEY EQUATIONS:
+  — $\Delta G = \Delta H - T\Delta S$
+  — $\Delta H^\circ = \sum \nu_i \Delta H_{f,i}^\circ$
+  — $\Delta S^\circ = \sum \nu_i S_i^\circ$
+  — $T_{eq} = \frac{\Delta H^\circ}{\Delta S^\circ}$

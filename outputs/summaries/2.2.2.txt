@@ -1,0 +1,30 @@
+[SUMMARY: 2.2.2 — Derivation of the Maxwell Relations from Exact Differentials]
+
+ESTABLISHED:
+  — The derivation of the four Maxwell relations based on the property that thermodynamic potentials are state functions with exact differentials.
+  — The application of Schwarz's theorem (equality of mixed partial derivatives) to the fundamental relations of $U, H, F,$ and $G$.
+  — The identification of natural variables for each potential: $U(S, V)$, $H(S, P)$, $F(T, V)$, and $G(T, P)$.
+
+NOT YET DEVELOPED:
+  — Practical application of these relations to derive other thermodynamic identities (e.g., internal pressure).
+
+NOTATION INTRODUCED:
+  — $U$ : Internal Energy [J]
+  — $H$ : Enthalpy [J]
+  — $F$ : Helmholtz Free Energy [J]
+  — $G$ : Gibbs Free Energy [J]
+  — $S$ : Entropy [J/K]
+  — $V$ : Volume [m$^3$]
+  — $T$ : Temperature [K]
+  — $P$ : Pressure [Pa]
+
+PEDAGOGICAL APPROACH:
+  — Full mathematical derivation using multivariable calculus.
+  — Physical intuition provided via the concept of state functions and the "Thermodynamic Square" mnemonic.
+  — No worked examples or exercises included in this subsection.
+
+KEY EQUATIONS:
+  — $\left( \frac{\partial T}{\partial V} \right)_S = -\left( \frac{\partial P}{\partial S} \right)_V$
+  — $\left( \frac{\partial T}{\partial P} \right)_S = \left( \frac{\partial V}{\partial S} \right)_P$
+  — $\left( \frac{\partial S}{\partial V} \right)_T = \left( \frac{\partial P}{\partial T} \right)_V$
+  — $-\left( \frac{\partial S}{\partial P} \right)_T = \left( \frac{\partial V}{\partial T} \right)_P$

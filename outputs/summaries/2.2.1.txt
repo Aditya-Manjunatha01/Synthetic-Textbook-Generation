@@ -1,0 +1,35 @@
+[SUMMARY: 2.2.1 — Construction of Thermodynamic Potentials and the Legendre Transform]
+
+ESTABLISHED:
+  — The fundamental thermodynamic relation is derived by combining the First Law ($dU = \delta Q - \delta W$) with reversible definitions $\delta Q = T dS$ and $\delta W = P dV$, yielding $dU = T dS - P dV$.
+  — The Legendre transform is defined as $h(g) = f(x) - gx$, allowing a change of independent variables from $x$ to the conjugate variable $g = df/dx$.
+  — Three potentials are constructed via Legendre transforms of $U(S, V)$:
+    1. Enthalpy: $H = U + PV$ with $dH = T dS + V dP$.
+    2. Helmholtz Free Energy: $F = U - TS$ with $dF = -S dT - P dV$.
+    3. Gibbs Free Energy: $G = H - TS$ (or $F + PV$) with $dG = -S dT + V dP$.
+  — Demonstrated via an ideal gas example that the equation of state $P = RT/V$ is recovered by differentiating the appropriate potential ($F$) with respect to its natural variable.
+
+NOT YET DEVELOPED:
+  — The derivation of Maxwell relations from the exactness of these differentials.
+
+NOTATION INTRODUCED:
+  — $U$ : internal energy [J]
+  — $S$ : entropy [J/K]
+  — $V$ : volume [m$^3$]
+  — $T$ : temperature [K]
+  — $P$ : pressure [Pa]
+  — $H$ : enthalpy [J]
+  — $F$ : Helmholtz free energy [J]
+  — $G$ : Gibbs free energy [J]
+  — $\mathcal{L}$ : Legendre transform operator [dimensionless]
+
+PEDAGOGICAL APPROACH:
+  — Full mathematical derivation of potentials.
+  — Physical intuition provided regarding "natural" vs. "experimental" variables.
+  — Included a worked example using an ideal gas to demonstrate practical utility.
+
+KEY EQUATIONS:
+  — $dU = T dS - P dV$
+  — $H = U + PV \implies dH = T dS + V dP$
+  — $F = U - TS \implies dF = -S dT - P dV$
+  — $G = H - TS \implies dG = -S dT + V dP$

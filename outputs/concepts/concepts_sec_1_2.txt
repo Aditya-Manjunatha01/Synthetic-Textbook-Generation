@@ -1,0 +1,57 @@
+
+
+<<CONCEPT: Non-Quasistatic Process>>
+name        : Non-Quasistatic Process
+status      : introduced
+location    : 1.2.2
+depends_on  : []
+statement   : A process occurring rapidly enough that the system does not remain in internal equilibrium, leading to internal pressure gradients.
+<</CONCEPT>>
+
+<<CONCEPT: Adiabatic Process>>
+name        : Adiabatic Process
+status      : introduced
+location    : 1.2.2
+depends_on  : []
+statement   : A thermodynamic process in which there is no heat exchange between the system and its surroundings (Q = 0).
+<</CONCEPT>>
+
+<<CONCEPT: First Law of Thermodynamics>>
+name        : First Law of Thermodynamics
+status      : assumed
+location    : 1.2.2
+depends_on  : []
+statement   : The change in internal energy of a system is equal to the heat added to the system minus the work done by the system.
+<</CONCEPT>>
+
+<<CONCEPT: control volume>>
+name        : control volume
+status      : introduced
+location    : 1.2.3
+depends_on  : []
+statement   : A fixed region in space through which mass and energy may flow.
+<</CONCEPT>>
+
+<<CONCEPT: flow work>>
+name        : flow work
+status      : introduced
+location    : 1.2.3
+depends_on  : []
+statement   : The work required to push a differential mass into or out of a control volume, defined as P dV.
+<</CONCEPT>>
+
+<<CONCEPT: enthalpy>>
+name        : enthalpy
+status      : introduced
+location    : 1.2.3
+depends_on  : []
+statement   : A thermodynamic property defined as H = U + PV, accounting for internal energy and flow work.
+<</CONCEPT>>
+
+<<CONCEPT: First Law for an open system>>
+name        : First Law for an open system
+status      : proven
+location    : 1.2.3
+depends_on  : []
+statement   : The rate of change of energy in a control volume equals the net heat transfer rate, minus the net work rate, plus the net energy flux of mass flow.
+<</CONCEPT>>

@@ -1,0 +1,30 @@
+[SUMMARY: 3.2.1 — Thermodynamics of First-Order Phase Transitions and the Clausius-Clapeyron Equation]
+
+ESTABLISHED:
+  - Definition of a first-order phase transition: a transition where the first derivatives of the Gibbs free energy (molar entropy $s$ and molar volume $v$) are discontinuous.
+  - Derivation of the Clapeyron Equation: Starting from the equilibrium condition $\mu_\alpha = \mu_\beta$ and the Gibbs-Duhem relation $d\mu = -s dT + v dP$, the slope of the coexistence curve is derived as $\frac{dP}{dT} = \frac{\Delta s}{\Delta v}$.
+  - Relation of latent heat to entropy: $\Delta s = L/T$ for reversible isothermal transitions.
+  - Derivation of the Clausius-Clapeyron Approximation: Applied to vaporization by assuming $v_{gas} \gg v_{liq}$ and $v_{gas} = RT/P$.
+
+NOT YET DEVELOPED:
+  - Integration of the Clausius-Clapeyron equation to predict vapor pressure across temperature ranges.
+  - Application to specific substances (e.g., water).
+
+NOTATION INTRODUCED:
+  - $\mu$ : chemical potential [J mol$^{-1}$]
+  - $s$ : molar entropy [J K$^{-1}$ mol$^{-1}$]
+  - $v$ : molar volume [m$^3$ mol$^{-1}$]
+  - $\Delta s$ : change in molar entropy [J K$^{-1}$ mol$^{-1}$]
+  - $\Delta v$ : change in molar volume [m$^3$ mol$^{-1}$]
+  - $L$ : latent heat [J mol$^{-1}$]
+  - $R$ : universal gas constant [J K$^{-1}$ mol$^{-1}$]
+
+PEDAGOGICAL APPROACH:
+  - Full mathematical derivation provided for both the exact and approximate equations.
+  - Physical intuition provided regarding the meaning of discontinuities in $G$ derivatives.
+  - No worked examples or exercises included in this subsection.
+
+KEY EQUATIONS:
+  - $\frac{dP}{dT} = \frac{\Delta s}{\Delta v}$
+  - $\frac{dP}{dT} = \frac{L}{T \Delta v}$
+  - $\frac{dP}{dT} = \frac{P L}{RT^2}$

@@ -25,6 +25,7 @@ Section {{section_id}}: {{section_name}}
 
 This textbook is written for a undergraduate (3rd year) audience. Calibrate your vocabulary, assumed prerequisites, mathematical depth, to match exactly this level — neither oversimplify nor assume knowledge beyond it.
 
+Generate between {{min_subsections}} and {{max_subsections}} subsections for this section — no fewer than {{min_subsections}}, no more than {{max_subsections}}. 
+Ensure each subsection has enough content to cover all relevant aspects of the section.
 Generate the full subsection structure for this section now.
-Generate between 5 and 10 subsections for this section — no fewer than 3, no more than 10. 
-Ensure each subsection has enough content to cover all relevant aspects of the section
+

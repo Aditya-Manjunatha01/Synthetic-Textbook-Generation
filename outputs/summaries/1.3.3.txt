@@ -1,0 +1,31 @@
+[SUMMARY: 1.3.3 — Internal Energy and Heat Capacities of Real Gases via the Joule-Thomson Effect]
+
+ESTABLISHED:
+  — The Joule-Thomson process is an isenthalpic expansion ($H_1 = H_2$) occurring in a steady-state flow through a porous plug under adiabatic conditions.
+  — The Joule-Thomson coefficient $\mu_{JT}$ is defined as the temperature gradient with respect to pressure at constant enthalpy.
+  — Derived the relationship $\mu_{JT} = -\frac{1}{C_{P,m}} \left( \frac{\partial H_m}{\partial P} \right)_T$.
+  — Linked $\mu_{JT}$ to the internal pressure $(\partial U_m / \partial V_m)_T$, showing that for ideal gases $\mu_{JT} = 0$.
+  — Applied the Van der Waals equation of state to approximate $\mu_{JT}$ and identified the inversion temperature $T_{inv}$, where $\mu_{JT} = 0$, separating the cooling ($\mu_{JT} > 0$) and heating ($\mu_{JT} < 0$) regimes.
+
+NOT YET DEVELOPED:
+  None.
+
+NOTATION INTRODUCED:
+  $\mu_{JT}$ : Joule-Thomson coefficient [K/Pa]
+  $H_m$ : Molar enthalpy [J/mol]
+  $U_m$ : Molar internal energy [J/mol]
+  $C_{P,m}$ : Molar heat capacity at constant pressure [J/(mol·K)]
+  $T_{inv}$ : Inversion temperature [K]
+  $a$ : Van der Waals attraction parameter [Pa·m$^6$/mol$^2$]
+  $b$ : Van der Waals excluded volume parameter [m$^3$/mol]
+
+PEDAGOGICAL APPROACH:
+  — Mathematical rigour: Full derivation of $\mu_{JT}$ using total differentials and the chain rule; used approximations for the Van der Waals application.
+  — Physical intuition: Provided via the concept of "internal pressure" and the balance between attractive and repulsive forces.
+  — Worked examples: Included a comparison between Nitrogen and Helium.
+  — Exercises: None.
+
+KEY EQUATIONS:
+  $\mu_{JT} = \left( \frac{\partial T}{\partial P} \right)_H = -\frac{1}{C_{P,m}} \left( \frac{\partial H_m}{\partial P} \right)_T$
+  $\left( \frac{\partial H_m}{\partial P} \right)_T = V_m + \left[ \left( \frac{\partial U_m}{\partial V_m} \right)_T + P \right] \left( \frac{\partial V_m}{\partial P} \right)_T$
+  $T_{inv} \approx \frac{2a}{R b}$

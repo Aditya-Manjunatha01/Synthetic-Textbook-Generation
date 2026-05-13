@@ -1,0 +1,27 @@
+[SUMMARY: 3.3.1 — The Nernst Heat Theorem and the Statement of the Third Law of Thermodynamics]
+
+ESTABLISHED:
+  - The Nernst Heat Theorem: The entropy change $\Delta S$ for any isothermal process in condensed phases vanishes as $T \to 0$.
+  - The Third Law of Thermodynamics (Planck Statement): The entropy of a pure, perfect crystalline substance approaches a universal constant $S_0$ as $T \to 0$.
+  - Absolute Entropy Scale: By convention, $S_0 = 0$ for non-degenerate ground states, allowing for the calculation of absolute entropy $S(T)$ via integration of heat capacity.
+  - Heat Capacity Constraint: To prevent logarithmic divergence of the entropy integral $\int (C_P/T) dT$, both $C_P$ and $C_V$ must approach zero as $T \to 0$.
+
+NOT YET DEVELOPED:
+  - Numerical application of the entropy integral for specific crystalline materials.
+
+NOTATION INTRODUCED:
+  - $S_0$ : absolute entropy at zero Kelvin [J K$^{-1}$ mol$^{-1}$]
+  - $C_P$ : molar heat capacity at constant pressure [J K$^{-1}$ mol$^{-1}$]
+  - $C_V$ : molar heat capacity at constant volume [J K$^{-1}$ mol$^{-1}$]
+
+PEDAGOGICAL APPROACH:
+  - Mathematical rigour: Heuristic derivation of the heat capacity limit based on the convergence of the entropy integral.
+  - Physical intuition: Provided via the concept of ground-state degeneracy and the "unattainability" of absolute zero.
+  - Worked examples: None.
+  - Exercises: None.
+
+KEY EQUATIONS:
+  - $\lim_{T \to 0} \Delta S = 0$
+  - $\lim_{T \to 0} S = S_0$
+  - $S(T) = \int_0^T \frac{C_P(T')}{T'} dT'$
+  - $\lim_{T \to 0} C_P = 0$

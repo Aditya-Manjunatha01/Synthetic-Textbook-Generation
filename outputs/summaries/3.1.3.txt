@@ -1,0 +1,33 @@
+[SUMMARY: 3.1.3 — Equilibrium Conditions for Multicomponent, Multiphase Systems]
+
+ESTABLISHED:
+  — The criteria for complete thermodynamic equilibrium in a multicomponent, multiphase closed system.
+  — Derivation via the minimization of total Gibbs free energy $G_{total} = \sum_{\alpha} G_{\alpha}$, where $dG_{total} = 0$ at equilibrium.
+  — Thermal equilibrium requires $T_\alpha = T_\beta$ to prevent spontaneous heat flow.
+  — Mechanical equilibrium requires $P_\alpha = P_\beta$ for phases separated by movable boundaries.
+  — Chemical equilibrium requires $\mu_{i,\alpha} = \mu_{i,\beta}$ for all species $i$ across all phases $\alpha, \beta$, derived from the conservation of species $dn_{i,\alpha} = -dn_{i,\beta}$.
+  — Application of these principles to derive Raoult's Law for ideal liquid-vapor binary mixtures.
+
+NOT YET DEVELOPED:
+  — Thermodynamics of first-order phase transitions.
+  — The Clausius-Clapeyron equation.
+
+NOTATION INTRODUCED:
+  $\alpha, \beta$ : phase indices [dimensionless]
+  $n_{i,\alpha}$ : amount of species $i$ in phase $\alpha$ [mol]
+  $G_{total}$ : total Gibbs free energy of the system [J]
+  $\mu_{i,\alpha}$ : chemical potential of species $i$ in phase $\alpha$ [J/mol]
+  $x_A$ : mole fraction of species A in the liquid phase [dimensionless]
+  $y_A$ : mole fraction of species A in the vapor phase [dimensionless]
+  $P_A^*$ : vapor pressure of pure component A [Pa]
+
+PEDAGOGICAL APPROACH:
+  — Full derivation starting from the fundamental thermodynamic relation of Gibbs free energy.
+  — Physical intuition provided regarding "escaping tendency" and driving forces.
+  — Included a worked example applying the theory to a binary mixture to derive Raoult's Law.
+
+KEY EQUATIONS:
+  $G_{total} = \sum_{\alpha} G_{\alpha}(T_{\alpha}, P_{\alpha}, \{n_{i,\alpha}\})$
+  $dG_{total} = \sum_{\alpha} \left( -S_{\alpha} dT_{\alpha} + V_{\alpha} dP_{\alpha} + \sum_{i} \mu_{i,\alpha} dn_{i,\alpha} \right) = 0$
+  $T_{\alpha} = T_{\beta}, \quad P_{\alpha} = P_{\beta}, \quad \mu_{i,\alpha} = \mu_{i,\beta}$
+  $x_A P_A^* = y_A P$

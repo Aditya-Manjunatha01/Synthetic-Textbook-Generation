@@ -1,0 +1,89 @@
+
+
+<<CONCEPT: Internal Energy of an Ideal Gas>>
+name        : Internal Energy of an Ideal Gas
+status      : proven
+location    : 1.3.1
+depends_on  : []
+statement   : The internal energy of an ideal gas depends solely on its temperature.
+<</CONCEPT>>
+
+<<CONCEPT: Joule's Law for Ideal Gases>>
+name        : Joule's Law for Ideal Gases
+status      : proven
+location    : 1.3.1
+depends_on  : []
+statement   : For an ideal gas, the partial derivative of internal energy with respect to volume at constant temperature is zero.
+<</CONCEPT>>
+
+<<CONCEPT: Molar Heat Capacity>>
+name        : Molar Heat Capacity
+status      : introduced
+location    : 1.3.1
+depends_on  : []
+statement   : The amount of heat required to raise the temperature of one mole of a substance by one Kelvin.
+<</CONCEPT>>
+
+<<CONCEPT: Mayer's Relation>>
+name        : Mayer's Relation
+status      : proven
+location    : 1.3.1
+depends_on  : []
+statement   : For an ideal gas, the difference between the molar heat capacity at constant pressure and constant volume is equal to the universal gas constant R.
+<</CONCEPT>>
+
+<<CONCEPT: Equipartition Theorem>>
+name        : Equipartition Theorem
+status      : assumed
+location    : 1.3.2
+depends_on  : []
+statement   : Every quadratic degree of freedom contributes 1/2 RT to the molar internal energy.
+<</CONCEPT>>
+
+<<CONCEPT: Rotational Freezing>>
+name        : Rotational Freezing
+status      : introduced
+location    : 1.3.2
+depends_on  : []
+statement   : The phenomenon where rotational degrees of freedom do not contribute to heat capacity when thermal energy is significantly lower than the energy gap between rotational states.
+<</CONCEPT>>
+
+<<CONCEPT: Joule-Thomson expansion>>
+name        : Joule-Thomson expansion
+status      : introduced
+location    : 1.3.3
+depends_on  : []
+statement   : A steady-state adiabatic expansion of a gas through a porous plug resulting in an isenthalpic process.
+<</CONCEPT>>
+
+<<CONCEPT: isenthalpic expansion>>
+name        : isenthalpic expansion
+status      : introduced
+location    : 1.3.3
+depends_on  : []
+statement   : A thermodynamic process in which the enthalpy of the system remains constant.
+<</CONCEPT>>
+
+<<CONCEPT: Joule-Thomson effect>>
+name        : Joule-Thomson effect
+status      : introduced
+location    : 1.3.3
+depends_on  : [Joule-Thomson expansion]
+statement   : The temperature change of a real gas when it undergoes an isenthalpic expansion.
+<</CONCEPT>>
+
+<<CONCEPT: internal pressure>>
+name        : internal pressure
+status      : introduced
+location    : 1.3.3
+depends_on  : []
+statement   : The quantity (\partial U_m / \partial V_m)_T representing work done against intermolecular forces during isothermal expansion.
+<</CONCEPT>>
+
+<<CONCEPT: inversion temperature>>
+name        : inversion temperature
+status      : introduced
+location    : 1.3.3
+depends_on  : [Joule-Thomson effect]
+statement   : The temperature above which a gas heats upon isenthalpic expansion and below which it cools.
+<</CONCEPT>>

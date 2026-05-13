@@ -1,0 +1,49 @@
+
+
+<<CONCEPT: Nernst Heat Theorem>>
+name        : Nernst Heat Theorem
+status      : introduced
+location    : 3.3.1
+depends_on  : []
+statement   : For any isothermal process involving condensed phases, the change in entropy vanishes as the temperature approaches absolute zero.
+<</CONCEPT>>
+
+<<CONCEPT: Third Law of Thermodynamics>>
+name        : Third Law of Thermodynamics
+status      : introduced
+location    : 3.3.1
+depends_on  : []
+statement   : As the temperature of a perfect crystalline substance approaches absolute zero, its entropy approaches a universal constant (conventionally zero).
+<</CONCEPT>>
+
+<<CONCEPT: Vanishing Heat Capacity>>
+name        : Vanishing Heat Capacity
+status      : proven
+location    : 3.3.1
+depends_on  : [Third Law of Thermodynamics]
+statement   : For the entropy to remain finite as T approaches zero, the heat capacities C_P and C_V must vanish as T approaches absolute zero.
+<</CONCEPT>>
+
+<<CONCEPT: Absolute Entropy Determination>>
+name        : Absolute Entropy Determination
+status      : proven
+location    : 3.3.2
+depends_on  : []
+statement   : The absolute entropy of a substance is determined by integrating the heat capacity divided by temperature from absolute zero to T, using a combination of the Debye $T^3$ law for low-temperature extrapolation and experimental data.
+<</CONCEPT>>
+
+<<CONCEPT: Debye T^3 Law>>
+name        : Debye T^3 Law
+status      : introduced
+location    : 3.3.2
+depends_on  : []
+statement   : For non-metallic crystalline solids at very low temperatures, the heat capacity is proportional to the cube of the absolute temperature.
+<</CONCEPT>>
+
+<<CONCEPT: Entropy Convergence Condition>>
+name        : Entropy Convergence Condition
+status      : proven
+location    : 3.3.3
+depends_on  : []
+statement   : For absolute entropy to remain finite as T approaches 0, the heat capacity C_P must vanish as T to the power of n where n > 0.
+<</CONCEPT>>

@@ -1,0 +1,144 @@
+
+
+<<SYMBOL: T>>
+symbol        : T
+latex         : T
+meaning       : absolute temperature
+type          : scalar
+units         : K
+scope         : global
+first_defined : 3.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: \Delta S>>
+symbol        : \Delta S
+latex         : \Delta S
+meaning       : change in entropy
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 3.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: S>>
+symbol        : S
+latex         : S
+meaning       : absolute entropy
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 3.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: S_0>>
+symbol        : S_0
+latex         : S_0
+meaning       : entropy at absolute zero
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 3.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: C_P>>
+symbol        : C_P
+latex         : C_P
+meaning       : molar heat capacity at constant pressure
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 3.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: C_V>>
+symbol        : C_V
+latex         : C_V
+meaning       : molar heat capacity at constant volume
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 3.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: T'>>
+symbol        : T'
+latex         : T'
+meaning       : dummy variable for temperature integration
+type          : scalar
+units         : K
+scope         : section-local
+first_defined : 3.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: T_{low}>>
+symbol        : T_{low}
+latex         : T_{low}
+meaning       : minimum temperature for reliable experimental heat capacity measurements
+type          : scalar
+units         : K
+scope         : global
+first_defined : 3.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: \beta>>
+symbol        : \beta
+latex         : \beta
+meaning       : low-temperature heat capacity coefficient
+type          : scalar
+units         : J/(mol\cdot K^4)
+scope         : global
+first_defined : 3.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: S_{low}>>
+symbol        : S_{low}
+latex         : S_{low}
+meaning       : entropy contribution from the low-temperature extrapolation
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : section-local
+first_defined : 3.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: S_{exp}>>
+symbol        : S_{exp}
+latex         : S_{exp}
+meaning       : entropy contribution from experimental heat capacity data
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : section-local
+first_defined : 3.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: C_0>>
+symbol        : C_0
+latex         : C_0
+meaning       : proportionality constant for power-law heat capacity
+type          : scalar
+units         : J/(mol\cdot K^{n+1})
+scope         : section-local
+first_defined : 3.3.3
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: n>>
+symbol        : n
+latex         : n
+meaning       : dimensionless exponent for power-law heat capacity
+type          : scalar
+units         : dimensionless
+scope         : section-local
+first_defined : 3.3.3
+status        : active
+<</SYMBOL>>

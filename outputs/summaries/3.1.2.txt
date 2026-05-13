@@ -1,0 +1,33 @@
+[SUMMARY: 3.1.2 — Worked Example: Chemical Potential of an Ideal Gas and Ideal Solution]
+
+ESTABLISHED:
+  - Definition of mole fraction $x_i$ for a multicomponent system.
+  - Derivation of the chemical potential for a pure ideal gas by integrating $(\partial G / \partial P)_T = V$ from a reference pressure $P^\circ$.
+  - Derivation of the chemical potential for a species in an ideal gas mixture using Dalton's Law ($P_i = x_i P$).
+  - Derivation of the chemical potential for an ideal solution based on the assumption that $\Delta H_{mix} = 0$ and $\Delta V_{mix} = 0$, where the Gibbs free energy of mixing is driven solely by the entropy of mixing $\Delta S_{mix} = -R \sum n_i \ln x_i$.
+  - The thermodynamic basis for Raoult's Law via the equality of chemical potentials between liquid and gas phases.
+
+NOT YET DEVELOPED:
+  - Fugacity ($f_i$) for non-ideal gases.
+  - Activity ($a_i$) and activity coefficients ($\gamma_i$) for non-ideal solutions.
+
+NOTATION INTRODUCED:
+  - $x_i$ : mole fraction of species $i$ [dimensionless]
+  - $P^\circ$ : reference pressure [Pa or bar]
+  - $\mu_i^\circ(T)$ : standard chemical potential of pure gas $i$ at $P^\circ$ [J/mol]
+  - $P_i$ : partial pressure of species $i$ [Pa or bar]
+  - $\mu_i^{id}$ : chemical potential of species $i$ in an ideal gas mixture [J/mol]
+  - $\mu_i^*$ : chemical potential of pure liquid $i$ [J/mol]
+  - $\Delta G_{mix}$ : Gibbs free energy of mixing [J]
+
+PEDAGOGICAL APPROACH:
+  - Full derivations provided for both gas and liquid models.
+  - Physical intuition provided regarding "escaping tendency" and the driving force for dissolution.
+  - Worked examples used to bridge abstract definitions to practical equations.
+  - No exercises for the reader included.
+
+KEY EQUATIONS:
+  - $x_i = \frac{n_i}{\sum_{j=1}^N n_j}$
+  - $\mu(T, P) = \mu^\circ(T) + RT \ln \left( \frac{P}{P^\circ} \right)$
+  - $\mu_i^{id} = \mu_i^\circ(T) + RT \ln \left( \frac{x_i P}{P^\circ} \right)$
+  - $\mu_i = \mu_i^*(T, P) + RT \ln x_i$

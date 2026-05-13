@@ -1,0 +1,287 @@
+
+
+<<SYMBOL: U>>
+symbol        : U
+latex         : U
+meaning       : internal energy
+type          : scalar
+units         : J
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: T>>
+symbol        : T
+latex         : T
+meaning       : absolute temperature
+type          : scalar
+units         : K
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: V>>
+symbol        : V
+latex         : V
+meaning       : volume
+type          : scalar
+units         : m^3
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: \delta Q>>
+symbol        : \delta Q
+latex         : \delta Q
+meaning       : infinitesimal heat added to the system
+type          : scalar
+units         : J
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: \delta W>>
+symbol        : \delta W
+latex         : \delta W
+meaning       : infinitesimal work done by the system
+type          : scalar
+units         : J
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: n>>
+symbol        : n
+latex         : n
+meaning       : amount of substance (moles)
+type          : scalar
+units         : mol
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: U_m>>
+symbol        : U_m
+latex         : U_m
+meaning       : molar internal energy
+type          : scalar
+units         : J/mol
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: C_{V,m}>>
+symbol        : C_{V,m}
+latex         : C_{V,m}
+meaning       : molar heat capacity at constant volume
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: C_{P,m}>>
+symbol        : C_{P,m}
+latex         : C_{P,m}
+meaning       : molar heat capacity at constant pressure
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: P>>
+symbol        : P
+latex         : P
+meaning       : pressure
+type          : scalar
+units         : Pa
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: R>>
+symbol        : R
+latex         : R
+meaning       : universal gas constant
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 1.3.1
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: k_B>>
+symbol        : k_B
+latex         : k_B
+meaning       : Boltzmann constant
+type          : scalar
+units         : J/K
+scope         : global
+first_defined : 1.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: \Theta_{rot}>>
+symbol        : \Theta_{rot}
+latex         : \Theta_{rot}
+meaning       : characteristic rotational temperature
+type          : scalar
+units         : K
+scope         : global
+first_defined : 1.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: \hbar>>
+symbol        : \hbar
+latex         : \hbar
+meaning       : reduced Planck constant
+type          : scalar
+units         : J\cdot s
+scope         : global
+first_defined : 1.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: I>>
+symbol        : I
+latex         : I
+meaning       : moment of inertia
+type          : scalar
+units         : kg\cdot m^2
+scope         : global
+first_defined : 1.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: U_m^{trans}>>
+symbol        : U_m^{trans}
+latex         : U_m^{trans}
+meaning       : translational contribution to molar internal energy
+type          : scalar
+units         : J/mol
+scope         : global
+first_defined : 1.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: U_m^{rot}>>
+symbol        : U_m^{rot}
+latex         : U_m^{rot}
+meaning       : rotational contribution to molar internal energy
+type          : scalar
+units         : J/mol
+scope         : global
+first_defined : 1.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: C_{V,m}^{rot}>>
+symbol        : C_{V,m}^{rot}
+latex         : C_{V,m}^{rot}
+meaning       : rotational contribution to molar heat capacity at constant volume
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 1.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: C_{V,m}^{trans}>>
+symbol        : C_{V,m}^{trans}
+latex         : C_{V,m}^{trans}
+meaning       : translational contribution to molar heat capacity at constant volume
+type          : scalar
+units         : J/(mol\cdot K)
+scope         : global
+first_defined : 1.3.2
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: H>>
+symbol        : H
+latex         : H
+meaning       : enthalpy
+type          : scalar
+units         : J
+scope         : global
+first_defined : 1.3.3
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: H_m>>
+symbol        : H_m
+latex         : H_m
+meaning       : molar enthalpy
+type          : scalar
+units         : J/mol
+scope         : global
+first_defined : 1.3.3
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: \mu_{JT}>>
+symbol        : \mu_{JT}
+latex         : \mu_{JT}
+meaning       : Joule-Thomson coefficient
+type          : scalar
+units         : K/Pa
+scope         : global
+first_defined : 1.3.3
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: V_m>>
+symbol        : V_m
+latex         : V_m
+meaning       : molar volume
+type          : scalar
+units         : m^3/mol
+scope         : global
+first_defined : 1.3.3
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: a>>
+symbol        : a
+latex         : a
+meaning       : Van der Waals attraction parameter
+type          : scalar
+units         : Pa\cdot m^6/mol^2
+scope         : global
+first_defined : 1.3.3
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: b>>
+symbol        : b
+latex         : b
+meaning       : Van der Waals excluded volume parameter
+type          : scalar
+units         : m^3/mol
+scope         : global
+first_defined : 1.3.3
+status        : active
+<</SYMBOL>>
+
+<<SYMBOL: T_{inv}>>
+symbol        : T_{inv}
+latex         : T_{inv}
+meaning       : inversion temperature
+type          : scalar
+units         : K
+scope         : global
+first_defined : 1.3.3
+status        : active
+<</SYMBOL>>

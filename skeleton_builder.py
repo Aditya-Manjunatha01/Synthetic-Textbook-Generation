@@ -2,7 +2,10 @@ import json
 import logging
 import os
 
-from config import TEACHER_MODEL, OUTPUT_DIR, SKELETON_MAX_TOKENS, SKELETON_PATH, USER_LEVEL
+from config import (
+    TEACHER_MODEL, OUTPUT_DIR, SKELETON_MAX_TOKENS, SKELETON_PATH, USER_LEVEL,
+    MIN_CHAPTERS, MAX_CHAPTERS, MIN_SECTIONS, MAX_SECTIONS, MIN_SUBSECTIONS, MAX_SUBSECTIONS
+)
 from llm_client import call_llm, call_llm_messages
 from prompts import load_prompt
 from disk_utils import parse_json_response, write_file
@@ -20,8 +23,6 @@ _GARBAGE_NAMES = {
 
 MAX_RETRIES               = 3
 LOOKBACK_CHAPTERS         = 2
-MIN_SUBSECTIONS_PER_SEC   = 5
-MAX_SUBSECTIONS_PER_SEC   = 100
 
 
 # ── Public entry point ────────────────────────────────────────────────────────
@@ -48,6 +49,8 @@ def build_skeleton(topic_name: str) -> dict:
         system, user = load_prompt(1, {
             "topic_name": topic_name,
             "user_level": USER_LEVEL,
+            "min_chapters": MIN_CHAPTERS,
+            "max_chapters": MAX_CHAPTERS,
         })
         chapters_json = _call_with_retry(
             system, user,
@@ -77,6 +80,8 @@ def build_skeleton(topic_name: str) -> dict:
             "chapter_name":               ch["name"],
             "previous_chapters_sections": _fmt_prev_sections(skeleton, sections_done),
             "user_level":                 USER_LEVEL,
+            "min_sections":               MIN_SECTIONS,
+            "max_sections":               MAX_SECTIONS,
         })
         secs_json = _call_with_retry(
             system, user,
@@ -133,6 +138,8 @@ def build_skeleton(topic_name: str) -> dict:
                 "section_id":                         sec_id,
                 "section_name":                       sec_name,
                 "user_level":                         USER_LEVEL,
+                "min_subsections":                    MIN_SUBSECTIONS,
+                "max_subsections":                    MAX_SUBSECTIONS,
             })
 
             result = _call_with_retry(
@@ -291,19 +298,19 @@ def _validate_section_subsections(parsed: dict, section_id: str) -> dict:
             f"Value for '{section_id}' must be a non-empty list of subsection objects"
         )
 
-    # ── Subsection count enforcement ──────────────────────────────────────────
+# ── Subsection count enforcement ──────────────────────────────────────────
     n = len(subs)
-    if n > MAX_SUBSECTIONS_PER_SEC:
+    if n > MAX_SUBSECTIONS:
         raise ValueError(
             f"Section '{section_id}' has {n} subsections — maximum allowed is "
-            f"{MAX_SUBSECTIONS_PER_SEC}. Reduce to between {MIN_SUBSECTIONS_PER_SEC} "
-            f"and {MAX_SUBSECTIONS_PER_SEC} subsections."
+            f"{MAX_SUBSECTIONS}. Reduce to between {MIN_SUBSECTIONS} "
+            f"and {MAX_SUBSECTIONS} subsections."
         )
-    if n < MIN_SUBSECTIONS_PER_SEC:
+    if n < MIN_SUBSECTIONS:
         raise ValueError(
             f"Section '{section_id}' has {n} subsections — minimum required is "
-            f"{MIN_SUBSECTIONS_PER_SEC}. Generate between {MIN_SUBSECTIONS_PER_SEC} "
-            f"and {MAX_SUBSECTIONS_PER_SEC} subsections."
+            f"{MIN_SUBSECTIONS}. Generate between {MIN_SUBSECTIONS} "
+            f"and {MAX_SUBSECTIONS} subsections."
         )
 
     errors = []

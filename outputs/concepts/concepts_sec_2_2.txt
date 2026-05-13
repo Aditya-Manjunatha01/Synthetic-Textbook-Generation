@@ -1,0 +1,41 @@
+
+
+<<CONCEPT: Fundamental Thermodynamic Relation>>
+name        : Fundamental Thermodynamic Relation
+status      : proven
+location    : 2.2.1
+depends_on  : []
+statement   : The relation dU = T dS - P dV expresses internal energy as a function of its natural variables S and V.
+<</CONCEPT>>
+
+<<CONCEPT: Legendre Transform>>
+name        : Legendre Transform
+status      : proven
+location    : 2.2.1
+depends_on  : []
+statement   : A mathematical operation that transforms a convex function to a new function of its slope, preserving all original information.
+<</CONCEPT>>
+
+<<CONCEPT: Thermodynamic Potentials>>
+name        : Thermodynamic Potentials
+status      : introduced
+location    : 2.2.1
+depends_on  : [Legendre Transform]
+statement   : State functions (U, H, F, G) constructed via Legendre transforms to suit different experimental constraints.
+<</CONCEPT>>
+
+<<CONCEPT: Internal Pressure>>
+name        : Internal Pressure
+status      : proven
+location    : 2.2.3
+depends_on  : []
+statement   : The rate of change of internal energy with respect to volume at constant temperature, given by (\partial U/\partial V)_T = T(\partial P/\partial T)_V - P.
+<</CONCEPT>>
+
+<<CONCEPT: Joule's Law>>
+name        : Joule's Law
+status      : proven
+location    : 2.2.3
+depends_on  : []
+statement   : For an ideal gas, the internal energy is independent of volume at constant temperature, meaning the internal pressure is zero.
+<</CONCEPT>>

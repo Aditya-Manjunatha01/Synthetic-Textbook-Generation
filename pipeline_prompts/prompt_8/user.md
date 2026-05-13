@@ -5,5 +5,3 @@ AFTER THAT:         {{subsection_after_next_name}}   ← omit this line if end o
 ━━━ SUBSECTION CONTENT ━━━
 {{subsection_content}}
 
-Read the subsection content carefully. Emit all four blocks: STM, SUMMARY,
-REGISTRY_DELTA, and CONCEPT_DELTA.

@@ -1,0 +1,30 @@
+TOPIC: {{topic_name}}
+
+━━━ ALL CHAPTERS (names only) ━━━
+
+{{chapter_list}}
+
+━━━ PREVIOUS CHAPTER SECTIONS ━━━
+
+{{previous_chapter_sections}}
+
+━━━ CURRENT CHAPTER ━━━
+
+Chapter {{chapter_id}}: {{chapter_name}}
+
+All sections in this chapter:
+{{section_list}}
+
+━━━ SUBSECTIONS GENERATED FOR THIS CHAPTER SO FAR ━━━
+
+{{current_chapter_subsections_so_far}}
+
+━━━ CURRENT SECTION TO EXPAND ━━━
+
+Section {{section_id}}: {{section_name}}
+
+This textbook is written for a undergraduate (3rd year) audience. Calibrate your vocabulary, assumed prerequisites, mathematical depth, to match exactly this level — neither oversimplify nor assume knowledge beyond it.
+
+Generate the full subsection structure for this section now.
+Generate between 5 and 10 subsections for this section — no fewer than 3, no more than 10. 
+Ensure each subsection has enough content to cover all relevant aspects of the section
